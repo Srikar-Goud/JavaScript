@@ -1,0 +1,11 @@
+function maskEmail(email){
+const parts = email.split("@");
+const name = parts[0];
+const domain = parts[1];
+const firstName = name[0];
+const middle = "*".repeat(name.length-2);
+const lastName = name[name.length-1];
+return firstName + middle + lastName + "@" + domain;
+}
+let email = "apple.pie@example.com";
+console.log(maskEmail(email));
