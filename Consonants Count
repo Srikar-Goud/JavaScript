@@ -1,0 +1,15 @@
+function getConsonantCount(sentence){
+  let count = 0;
+  const vowels = "aeiouAEIOU";
+  for(let char of sentence){
+     if (
+      char.toLowerCase() >= "a" &&
+      char.toLowerCase() <= "z" &&
+      !vowels.includes(char)
+    ){ 
+      count++;
+    }
+  }
+  return count;
+}
+console.log(getConsonantCount("Coding is fun"))
