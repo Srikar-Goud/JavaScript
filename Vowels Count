@@ -1,0 +1,9 @@
+function getVowelCount(sentence){
+let count = 0;
+const vowels = "aeiouAEIOU";
+for(let char of sentence){
+  if(vowels.includes(char)) count++;
+}
+return count
+}
+console.log(getVowelCount(""))
